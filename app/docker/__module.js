@@ -36,7 +36,8 @@ angular.module('portainer.docker', ['portainer.app'])
     views: {
       'content@': {
         templateUrl: './views/configs/edit/config.html',
-        controller: 'ConfigController'
+        controller: 'ConfigController',
+        controllerAs: 'ctrl'
       }
     }
   };
@@ -48,7 +49,7 @@ angular.module('portainer.docker', ['portainer.app'])
       'content@': {
         templateUrl: './views/configs/create/createconfig.html',
         controller: 'CreateConfigController',
-        controllerAs: '$ctrl'
+        controllerAs: 'ctrl'
       }
     }
   };
